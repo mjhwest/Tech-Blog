@@ -9,6 +9,7 @@ const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
+//3001 is our server port. 
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
@@ -17,7 +18,10 @@ const hbs = exphbs.create({ helpers });
 const sess = {
     secret: 'Super secret secret',
     //need to make sure expires time is correct in cookie. 
-    cookie: {},
+    cookie: {
+        maxAge: 1000000
+    },
+    //1000000 million seconds is 16minutes 
     resave: true,
     rolling: true,
     saveUninitialized: true,
