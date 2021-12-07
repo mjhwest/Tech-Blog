@@ -22,8 +22,7 @@ const sess = {
         maxAge: 1000000
     },
     //1000000 million seconds is 16minutes 
-    resave: true,
-    rolling: true,
+    resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
         db: sequelize

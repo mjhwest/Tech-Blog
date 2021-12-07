@@ -1,0 +1,11 @@
+/* css here for stylinh handlebars  */
+
+body {
+    background-color: rgb(227, 227, 129);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    line-height: 1.5;
+    font-size: 22px;
+}
