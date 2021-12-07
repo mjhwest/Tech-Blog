@@ -9,3 +9,21 @@ body {
     line-height: 1.5;
     font-size: 22px;
 }
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    padding: 3% 4%;
+    background-color: brown;
+    color: cornsilk;
+}
+
+.link {
+    color: rgb(2, 1, 0);
+}
