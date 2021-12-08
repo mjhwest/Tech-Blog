@@ -1,5 +1,4 @@
 const router = require('express').Router();
-
 //get all api routes 
 const apiRoutes = require('./api');
 //get all homeRoutes 
