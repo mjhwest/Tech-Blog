@@ -2,7 +2,7 @@ const loginFormHandler = async(event) => {
     event.preventDefault();
 
     // Collect values from the login form
-    const email = document.querySelector('#email-login').value.trim();
+    const email = document.querySelector('#username-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
     if (email && password) {
@@ -45,9 +45,9 @@ const signupFormHandler = async(event) => {
 };
 
 document
-    .querySelector('.login-form')
+    .querySelector('#email-form')
     .addEventListener('submit', loginFormHandler);
 
-document
-    .querySelector('.signup-form')
-    .addEventListener('submit', signupFormHandler);
+// document
+//     .querySelector('#signup-form')
+//     .addEventListener('submit', signupFormHandler);
