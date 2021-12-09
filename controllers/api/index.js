@@ -8,7 +8,7 @@ const commentRoutes = require('./commentRoutes');
 
 router.use('/users', userRoutes);
 router.use('/posts', postRoutes);
-route.user('/comments', commentRoutes);
+router.use('/comments', commentRoutes);
 
 //export router. 
 module.exports = router;
