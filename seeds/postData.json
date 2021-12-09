@@ -1,12 +1,12 @@
 [{
         "title": "What's your fav tech?",
-        "post_content": "My fav tech is gaming tech, i like to play games with my friends",
+        "post_content": "My fav tech is gaming tech?",
         "user_id": "1"
     },
 
     {
         "title": "Do you believe in crypto?",
-        "post_content": "Do you think crypto will be around for a long time? I hope so!",
+        "post_content": "Do you think crypto will be around for a long time? ",
         "user_id": "2"
 
     },
