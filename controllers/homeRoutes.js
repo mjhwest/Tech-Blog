@@ -50,6 +50,7 @@ router.get('/login', (req, res) => {
         return;
     }
     res.render('login');
+    console.log('checking login')
 });
 
 router.get('/signup', (req, res) => {
