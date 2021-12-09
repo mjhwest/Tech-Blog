@@ -17,7 +17,7 @@ Post.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    content: {
+    post_content: {
         type: DataTypes.TEXT,
         allowNull: false
     },
@@ -27,7 +27,8 @@ Post.init({
             model: 'user',
             key: 'id'
         }
-    }
+    },
+
 }, {
     sequelize,
     freezeTableName: true,

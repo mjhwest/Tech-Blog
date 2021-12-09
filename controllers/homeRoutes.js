@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
+// const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
@@ -12,17 +12,16 @@ router.get('/', async(req, res) => {
             attributes: [
                 'id',
                 'title',
-                'content',
+                'post_content',
                 'created_at'
             ],
             include: [{
                 model: User,
                 attributes: ['username'],
-                //need to add in more attributes based on seeds?..
             }, ],
             include: [{
                     model: Comment,
-                    // attributes: [LIST HERE], 
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
                     include: {
                         model: User,
                         attributes: ['username']
@@ -54,33 +53,58 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
     res.render('signup');
 });
 
 
 
 
+// router.get('/posts/:id', async(req, res) => {
+//     try {
+//         const postData = await Post.findByPk(req.params.id, {
+//             include: [{
+//                 model: User,
+//                 attributes: ['id', 'content', 'title', 'created_at'],
+//             }, ],
+//             include: [{
+//                     model: Comment,
+//                     attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+//                     include: {
+//                         model: User,
+//                         attributes: ['username']
+//                     }
+//                 },
+//                 {
+//                     model: User,
+//                     attributes: ['username']
+//                 }
+//             ]
+
+//         });
+
+//         const post = postData.get({ plain: true });
+
+//         res.render('post', {
+//             ...post,
+//             logged_in: req.session.logged_in
+//         });
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// });
+
 router.get('/posts/:id', async(req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
             include: [{
                 model: User,
-                attributes: ['id', 'content', 'title', 'created_at'],
+                attributes: ['username'],
             }, ],
-            include: [{
-                    model: Comment,
-                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-                    include: {
-                        model: User,
-                        attributes: ['username']
-                    }
-                },
-                {
-                    model: User,
-                    attributes: ['username']
-                }
-            ]
-
         });
 
         const post = postData.get({ plain: true });

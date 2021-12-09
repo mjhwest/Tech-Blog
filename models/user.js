@@ -9,7 +9,6 @@ class User extends Model {
     }
 }
 
-// define table columns and configuration
 User.init({
     // define an id column
     id: {
@@ -24,14 +23,25 @@ User.init({
         allowNull: false,
         unique: true
     },
+    // define a email column 
+
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+        validate: {
+            isEmail: true
+        }
+    },
     // define a password column 
     password: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            len: [4]
-        }
-    }
+            len: [8],
+        },
+    },
+
 }, {
     hooks: {
         // set up beforeCreate lifecycle "hook" functionality
