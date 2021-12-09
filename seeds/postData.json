@@ -1,20 +1,20 @@
 [{
         "title": "What's your fav tech?",
         "post_content": "My fav tech is gaming tech?",
-        "user_id": "1"
+        "user_id": 1
     },
 
     {
         "title": "Do you believe in crypto?",
         "post_content": "Do you think crypto will be around for a long time? ",
-        "user_id": "2"
+        "user_id": 2
 
     },
 
     {
         "title": "Computer Errors",
         "post_content": "Hey everyone, i downloaded a random file from reddit and now im getting lots of errors on my computer, is this normal?",
-        "user_id": "3"
+        "user_id": 3
 
 
     },
@@ -23,6 +23,6 @@
 
         "title": "Tech Music?",
         "post_content": "Hello Internet, does anyone know how i can play music on my computer?",
-        "user_id": "4"
+        "user_id": 4
     }
 ]
