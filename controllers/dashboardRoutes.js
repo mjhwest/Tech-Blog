@@ -74,6 +74,12 @@ router.get('/edit/:id', withAuth, (req, res) => {
             // serialize the data
             const post = dbPostData.get({ plain: true });
 
+
+            //here
+            console.log(Post)
+
+
+
             res.render('edit-post', {
                 post,
                 loggedIn: true
