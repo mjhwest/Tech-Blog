@@ -6,7 +6,7 @@
             <div class="card w-75 text-white bg-secondary border-light">
                 <div class="card-header">
                     <a class="link-light" href="/post/{{id}}"><h4 class="display-4">{{name}}</h4></a>
-                    <p class="card-text"><small class="text-white">Posted by {{user.username}} <cite title="Source Title">{{format_date created_at}}</cite></small></p>
+                    <p class="card-text"><small class="text-white">Posted by {{user.username}} <cite title="Source Title">{{format_date createdAt}}</cite></small></p>
                 </div>
                 <div class="card-body">
                     <p class="h5">{{description}}</p>
@@ -21,7 +21,7 @@
             <div class="card-body">
                 <blockquote class="blockquote mb-0 text-center">
                     <p>{{comment.description}}</p>
-                    <footer class="blockquote-footer text-white m-0">{{user.username}} <cite title="Source Title">{{format_date created_at}} </cite></footer>
+                    <footer class="blockquote-footer text-white m-0">{{user.username}} <cite title="Source Title">{{format_date createdAt}} </cite></footer>
                 </blockquote>
             </div>
         </div>
