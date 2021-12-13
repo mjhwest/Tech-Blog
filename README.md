@@ -10,7 +10,7 @@ Our task this week was to build a CMS-style blog site similar to a Wordpress sit
 
 This is an important activity as it allowed us to implement our handlebars and sequelize skills, practice and show our understanding of routes (get, post, put, delete), demonstrate our understanding of one to one and one to many relationships and continue our understanding of async functions. 
 
-To view the application live on Heroku [please click]() 
+To view the application live on Heroku [please click](https://mwest-tech-blog.herokuapp.com/) 
 
 
 ## Table of Contents 
@@ -35,7 +35,7 @@ Once the seeds have been executed create the code needed in `server.js` to sync 
 
 
 ## Usage
-To use the application please view it live on Heroku. You can click [here to view it on Heroku]()
+To use the application please view it live on Heroku. You can click [here to view it on Heroku](https://mwest-tech-blog.herokuapp.com/)
 
 
 ## Features
