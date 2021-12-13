@@ -1,7 +1,7 @@
 /* css here for stylinh handlebars  */
 
 body {
-    background-color: rgb(227, 227, 129);
+    background-color: rgb(184, 141, 141);
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -20,25 +20,16 @@ body {
 
 .hero {
     padding: 3% 4%;
-    background-color: brown;
+    background-color: black;
     color: cornsilk;
 }
 
 .link {
-    color: rgb(2, 1, 0);
+    color: rgb(253, 246, 239);
 }
 
 * {
     box-sizing: border-box;
-}
-
-body,
-html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: #333;
 }
 
 a {
@@ -58,6 +49,7 @@ button {
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
+    background-color: red
 }
 
 .post-list {
@@ -111,6 +103,7 @@ header {
 main {
     flex: 1;
     padding: 2% 4%;
+    background-color: burlywood;
 }
 
 .btn-no-style {
