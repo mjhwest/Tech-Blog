@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models/Index');
+const { User } = require('../../models');
 
 
 //create a new user. 

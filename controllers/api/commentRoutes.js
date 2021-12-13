@@ -1,6 +1,6 @@
 //need to do this still
 const router = require('express').Router();
-const { Comment, Post } = require('../../models/Index');
+const { Comment, Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
